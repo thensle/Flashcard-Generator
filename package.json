@@ -1,0 +1,23 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "basic-card.js",
+  "dependencies": {
+    "inquirer": "^3.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thensle/Flashcard-Generator.git"
+  },
+  "author": "Tara Hensle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thensle/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/thensle/Flashcard-Generator#readme"
+}
