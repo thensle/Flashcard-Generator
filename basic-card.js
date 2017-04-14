@@ -32,30 +32,30 @@ var cardBasic = new BasicCard(basicQues, basicAnswer);
 var cardCloze = new ClozeCard(clozeFull, clozeAnswer);
 
 //Storing data
-if(cardType === "basic"){
-	data = {
-			"question": cardBasic.front,
-			"answer": cardBasic.back
-		};
-	logFile = "basic-card-data.json";
-} else if(cardType === "basic"){
-	data = {
-			"full": cardCloze.full,
-			"clozure": cardCloze.cloze
-		};
-	logFile = "cloze-card-data.json";
+	if(cardType === "basic"){
+		data = {
+				"question": cardBasic.front,
+				"answer": cardBasic.back
+			};
+		logFile = "basic-card-data.json";
+	} else if(cardType === "basic"){
+		data = {
+				"full": cardCloze.full,
+				"clozure": cardCloze.cloze
+			};
+		logFile = "cloze-card-data.json";
 
-} else {
-	return;
-};
-
-fs.appendFile(logFile, data, 'utf8', function(error) {
-	if (error){
-		console.log(error);
-	} else{
-		console.log('The "data to append" was appended to file!');
+	} else {
+		return;
 	};
-});
+
+	fs.appendFile(logFile, JSON.stringify(data), 'utf8', function(error) {
+		if (error){
+			console.log(error);
+		} else{
+			console.log('The "data to append" was appended to file!');
+		};
+	});
 	
 
 //Retrieving data
