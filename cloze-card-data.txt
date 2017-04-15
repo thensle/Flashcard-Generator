@@ -1,7 +1,8 @@
 {
 	"full": "John Watson is the grandfather of psychology.",
 	"clozure": "John Watson"
-},
+}
+
 {
 	"full": "Hermann Ebbinghaus first described the forgetting curve and learning curve.",
 	"clozure": "Hermann Ebbinghaus"
